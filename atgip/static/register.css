@@ -1,0 +1,70 @@
+.{
+    background-color: #BDE0FE;  
+}
+body {
+    background-image: url('registerbg.png');
+    background-size: cover;
+    z-index: -1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    z-index: 0;
+}
+#register-container {
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+#username, #password, #email {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 16px;
+    border-radius:25px;
+}
+#submit {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.popup {
+    position: fixed;
+    top: 60px;
+    right: 30px;
+    background: #4BB543;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 9999;
+    font-size: 1.1em;
+}

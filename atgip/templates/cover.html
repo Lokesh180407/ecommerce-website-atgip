@@ -1,0 +1,24 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{% static 'cover.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to atgip </title>
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+  <source src="{%static 'vedioatgip.mp4' %}" type="video/mp4">
+</video>
+    <div id="full">
+        <h2><i><pre><b> atgip gifts
+&
+fashion
+        </b></pre></i></h2>
+        <button class="button"><a href="{% url 'homepage' %}">Enter</a></button>
+
+    </div>
+    
+</body>
+</html>

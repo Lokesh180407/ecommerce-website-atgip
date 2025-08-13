@@ -1,0 +1,145 @@
+header {
+    background-color: #f8f9fa;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+#search {
+    height: 36px;
+    width: 250px;
+    padding: 0 15px;
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-button {
+    height: 36px;
+    padding: 0 20px;
+    border: none;
+    background-color: #C7FFED;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #C7FFED;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+#button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right:390px;
+}
+/* static/css/navbar.css */
+
+.navbar {
+    background-color: #f8f9fa;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* Hover underline effect */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Sticky underline for active link */
+nav ul li a.active::after {
+    width: 100%;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a.active {
+    border-bottom: 2px solid red;
+    font-weight: bold;
+}
+#myaccount,#logout{
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 20px;
+}

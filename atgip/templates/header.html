@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATGIP</title>
+    <link rel="stylesheet" href="{% static 'header.css'%}">
+</head>
+<body>
+    <header>
+        <h1>ATGIP</h1>
+        <input type="text" id="search" placeholder="Search...">
+        <button class="search-button" id ='button'>Search</button>
+        <nav>
+            <ul>
+                <li><a href="{% url 'homepage'%}">Home</a></li>
+                <li><a href="{% url 'about'%}">about </a></li>
+                <li><a href="{% url 'contact'%}">Contact</a></li>
+                
+                {% if user.is_authenticated %}
+                   <a href="{% url 'dashboard' %}" id="myaccount">My Account</a>
+                   <a href="{% url 'logout' %} " id="logout">Logout</a>
+                {% else %}
+                   <a href="{% url 'login' %}">Login</a>
+                   <a href="{% url 'register' %}">Register</a>
+                {% endif %}
+
+            </ul>
+        </nav>
+    </header>
+
+  
+</body>
+<script src="{% static 'header.js' %}"></script>
+</html>

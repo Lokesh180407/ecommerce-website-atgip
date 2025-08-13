@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATGIP</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+{% include "header.html" %}
+ <p>Welcome, {{ user.username }}</p>
+
+<div class="container">
+    <div class="product-card">
+        <img src="{% static 'loki.jpg' %}" alt="Butterfly Box" class="product-image">
+        <h2 class="product-title">Butterfly Box</h2>
+        <p class="product-price">₹500</p>
+        <p class="product-description">
+            A beautiful butterfly-shaped gift box perfect for any occasion.
+        </p>
+        <button class="buy-button">Buy Now</button>
+    </div>
+</div>
+</body>
+</html>
+
+

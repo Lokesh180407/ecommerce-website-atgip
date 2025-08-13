@@ -1,0 +1,39 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{% static 'contact.css'%}">
+</head>
+<body>
+    {% include "header.html" %}
+
+    <div class="contact-container">
+        <h1><b>Contact Us</b></h1>
+
+        <div class="contact-details">
+            <p><strong>Address:</strong> maissamaguda, Hyderabad, India</p>
+            <p><strong>Email:</strong> atgipfashion@gmail.com</p>
+            <p><strong>Phone:</strong> +91 9032969447</p>
+        </div>
+
+        <div class="feedback-form">
+            <h2>Send Feedback</h2>
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="5" placeholder="Type your feedback..." required></textarea>
+
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

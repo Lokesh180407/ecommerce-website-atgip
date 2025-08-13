@@ -1,0 +1,17 @@
+<!-- filepath: c:\Users\ANKITHA\OneDrive\Desktop\project a\atgip\templates\registration\logged_out.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logged Out - ATGIP</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>You have been logged out.</h2>
+        <p>Thank you for visiting ATGIP!</p>
+        <a href="{% url 'login' %}" class="buy-button">Log in again</a>
+        <a href="{% url 'cover' %}" class="buy-button">Go to Home</a>
+    </div>
+</body>
+</html>
